@@ -35,9 +35,12 @@
                       ESPECIALIDADES
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item tx-oscuro" href="servicios.html#dpto-cardio">Cardiología</a></li>
+                      <li><a class="dropdown-item tx-oscuro" href="servicios.html#dpto-clinica">Clínica</a></li>
+                      <li><a class="dropdown-item tx-oscuro" href="servicios.html#dpto-obstetricia">Obstetricia</a></li>
+                      <li><a class="dropdown-item tx-oscuro" href="servicios.html#dpto-odonto">Odontología</a></li>
+                      <li><a class="dropdown-item tx-oscuro" href="servicios.html#dpto-oftalmo">Oftalmología</a></li>
+                      <li><a class="dropdown-item tx-oscuro" href="servicios.html#dpto-pediatria">Pediatría</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -52,23 +55,73 @@
           </div>
         </nav>
       </header> 
-    <main>
+    <main class="tr-main">
+    <!-- <section class="tr-main">
         <h4>Para solicitar un turno complete el siguiente formulario</h4>
-        <form action="" method="">
-         
-            <label for="">Nombre completo</label> 
-            <input type="text" name="nombre" id="nombre" placeholder="">
-            <label for=""> Fecha de nacimiento </label>
-            <input type="date" name="fecha de nacimiento" id="Fecha de nacimiento" placeholder="DD/MM/AA">
-            <label for="">Especialidad y profesión</label>
-            <input type="select" name="Especialidad y profesional" id="Especialidad y profesional" >
-            <label for="">Seleccione día y horario</label>
-            <input type="datetime" name="Día y hora del turno" id="Día y hora del turno" >
-            <input type="submit" name="Enviar">
-        </form>   
+        <form class="tr-form" action="" method="">
+          <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Nombre completo</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          </div>
+          <label class="tx-oscuro" for="">Nombre completo</label> 
+          <input class="tx-oscuro" type="text" name="nombre" id="nombre" placeholder="">
+          <label class="tx-oscuro" for=""> Fecha de nacimiento </label>
+          <input class="tx-oscuro" type="date" name="fecha de nacimiento" id="Fecha de nacimiento" placeholder="DD/MM/AA">
+          <select class="form-select tx-oscuro" aria-label="Default select example">
+            <option selected>Seleccione la especialidad requerida</option>
+            <option value="1">Cardiología</option>
+            <option value="2">Clínica General</option>
+            <option value="3">Obstetricia</option>
+            <option value="4">Odontología</option>
+            <option value="5">Oftalmología</option>
+            <option value="3">Pedriatría</option>
+          </select>
+          <label class="tx-oscuro" for="">Seleccione día y horario</label>
+          <input class="tx-oscuro" type="datetime" name="Día y hora del turno" id="Día y hora del turno" >
+          <input class="tx-oscuro" type="submit" name="Enviar">
+        </form> 
+      </section>  --> 
+      <form class="row g-3 tr-main-form">
+        <h4>Para solicitar un turno complete el siguiente formulario</h4>
+        <div class="col-xl-12">
+          <label class="form-label tx-oscuro">Nombre</label>
+          <input type="text" class="form-control tx-oscuro">
+        </div>
+        <div class="col-xl-12">
+          <label class="form-label tx-oscuro">Apellido</label>
+          <input type="text" class="form-control tx-oscuro">
+        </div>
+        <div class="col-xl-12">
+          <label  class="form-label tx-oscuro">Email</label>
+          <input type="text" class="form-control tx-oscuro">
+        </div>
+        <div class="col-xl-12">
+          <label class="form-label tx-oscuro">Especialidad requerida</label>
+          <select class="form-select tx-oscuro">
+            <option class="tx-oscuro" value="1">Cardiología</option>
+            <option  class="tx-oscuro" value="2">Clínica General</option>
+            <option class="tx-oscuro" value="3">Obstetricia</option>
+            <option class="tx-oscuro" value="4">Odontología</option>
+            <option class="tx-oscuro" value="5">Oftalmología</option>
+            <option class="tx-oscuro" value="6">Pedriatría</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label tx-oscuro" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary tx-oscuro" type="submit">Enviar</button>
+        </div>
+      </form>
     </main>
     <footer class="footer">
         <p>Desarrollado por LeoChiara</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

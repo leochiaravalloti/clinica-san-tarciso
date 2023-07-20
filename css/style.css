@@ -34,11 +34,17 @@ font-family: 'Bree Serif', serif;
 }
 /*HEADER*/
 
-
-.logo{
-    width: 400px;
-    height: 50px;
-    margin-left: 0;
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    width: 40%;
+}
+.logo img{
+    width: 100%;
 }
 .header-nav{
     justify-content: right;
@@ -53,7 +59,7 @@ font-family: 'Bree Serif', serif;
     margin-left: 3%;
 }
 .boton-turnero a{
-    color: #E2E8CE;
+    color: white;
     background-color: #FF7F11;;
     border: 3px solid #FF7F11;;
     border-radius: 7%; 
@@ -63,6 +69,17 @@ font-family: 'Bree Serif', serif;
 
 /* MAIN */
 /*PORTADA*/
+.portada{
+    height: 80vh; 
+}
+.car-conteiner{
+    height: 100%;
+}
+.car-img-conteiner{
+    height: 100%;
+    overflow: hidden;
+}
+
 .car-text-le0{
        text-align: left;
     margin-left: 0;
@@ -132,17 +149,15 @@ font-family: 'Bree Serif', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 5%;
 }
 .subarticulo0{
-    margin: 0 5%;
     grid-area: subar0;
 }
 .subarticulo1{
-    margin: 0 5%;
     grid-area: subar1;
 }
 .subarticulo2{
-    margin: 0 5%;
     grid-area: subar2;
 }
 .subart--tit{
@@ -227,7 +242,7 @@ font-family: 'Bree Serif', serif;
 .nos-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-areas: 
     'mv mv cr1'
     'cr2 cr3 cr3'
@@ -238,8 +253,11 @@ font-family: 'Bree Serif', serif;
     background-color: #FF1B1C;
     margin: 0;
     grid-area: mv;
+    padding: 3% 10%;
 }
-
+.nos-main-mision p{
+    font-size: 1rem;
+}
 
 .nos-main-cronologia-1{
     background-color: #E2E8CE;
@@ -249,10 +267,28 @@ font-family: 'Bree Serif', serif;
 .nos-main-cronologia-1 img{
     width: 100%;
 }
+.nos-main-cronologia-1 h3{
+    padding: 7% 5% 0 5%;
+}
+.nos-main-cronologia-1 p{
+    padding: 0 5% 0 5%;
+}
+.ns-mn-crn1-tx{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 5% 5%;
+}
+
 .nos-main-cronologia-2{
     background-color: #FF7F11;
     margin: 0;
     grid-area: cr2;
+}
+.nos-main-cronologia-2 h3{
+    padding: 10% 5% 2% 5%;
+}
+.nos-main-cronologia-2 p{
+    padding: 5% 7%;
 }
 .nos-main-cronologia-2 img{
     width: 100%;
@@ -262,6 +298,12 @@ font-family: 'Bree Serif', serif;
     margin: 0;
     grid-area: cr3;
 }
+.nos-main-cronologia-3 h3{
+    padding: 2% 7% 0% 7%;
+}
+.nos-main-cronologia-3 p{
+    padding: 0 7%;
+}
 .nos-main-cronologia-3 img{
     width: 100%;
 }
@@ -270,6 +312,225 @@ font-family: 'Bree Serif', serif;
     margin: 0;
     grid-area: cr4;
 }
+.nos-main-cronologia-4 h3{
+    padding: 2% 7% 0% 7%;
+}
+.nos-main-cronologia-4 p{
+    padding: 1% 7%;
+}
 .nos-main-cronologia-4 img{
     width: 100%;
+}
+
+/*----------------SERVIVICOS----------*/
+
+.sv-dspl{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    'dp1 dp2 dp3'
+    'dp4 dp5 dp6' ;
+    margin: 0;
+    padding: 0;
+    background-color: #FF7F11;
+}
+.sv-dspl-card{
+    grid-area: dp1;
+}
+.sv-dspl-card img{
+    width: 100%;
+}
+.sv-dspl-clin{
+    grid-area: dp2;
+}
+.sv-dspl-clin img{
+    width: 100%;
+}
+.sv-dspl-obst{
+    grid-area: dp3;
+}
+.sv-dspl-obst img{
+    width: 100%;
+}
+.sv-dspl-odon{
+    grid-area: dp4;
+
+}
+.sv-dspl-odon img{
+    width: 100%;
+}
+.sv-dspl-oft{
+    grid-area: dp5;
+}
+.sv-dspl-oft img{
+    width: 100%;
+}
+.sv-dspl-ped{
+    grid-area: dp6;
+}
+.sv-dspl-ped img{
+    width: 100%;
+}
+.sv-dspl-cd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4% 7%;
+    color: #E2E8CE;
+}
+.sv-dspl-cd img{
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;  
+}
+.sv-dspl-cd a{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1%;
+}
+.sv-dspl-cd:hover {
+    border: 3px solid #E2E8CE;
+    border-radius: 4%;
+}
+
+.sv-acc{
+    margin: 2% 10%;
+    padding: 0;
+}
+.sv-acc-tx h2{
+    font-family: 'Rubik', sans-serif;
+    color: #262626;
+}
+.sv-acc-tx p{
+    font-family: 'Bree Serif', serif;
+    color: #262626;
+    font-size: 1rem;
+}
+
+/*----------CONTACTO----------*/
+.ct-main-tx{
+    padding: 2% 8% 0 9%;
+    margin: 0;
+}
+.ct-main-map{
+    width: 100%;
+    padding: 2% 10%;
+    margin: 0;
+}
+.ct-main-map iframe{
+    width: 100%;
+}
+
+/*----------TURNERO----------*/
+.tr-main{
+}
+.tr-main-form {
+    padding: 2% 20%;
+    background-color: #E2E8CE;
+}
+.tr-main-form h4{
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.tr-form{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 15%;
+}
+.tr-form label select{
+    font-size: 1.4rem;
+}
+.tr-form input{
+    font-size: 1.4rem;
+    margin: 1% 0;
+}
+    
+/*################ M O B I L E ##################*/
+
+@media screen and (max-width: 500px){
+    
+    /* Header */
+    .header{
+        width: 100%;
+    }
+    .logo{
+        width: 40%;
+    }
+    .logo img{
+        display: none;
+    }
+    /*INDEX Portada*/
+    .portada{
+        height: 300px;
+        margin-top: 60px;
+    }
+    
+    .car-conteiner{
+        height: 100%;
+    }
+    .car-img-conteiner{
+        width: auto;
+        overflow: hidden;
+        height: 100%;
+    }
+    .car-text-le0{
+        height: 25%;
+    }
+    .car-text-le0 h5{
+        font-size: 0.9rem;
+        padding: 2% 2% 0 0;
+        margin: 0;
+        width: 100%;
+    }
+    .car-text-le0 p{
+        font-size: 0.6rem;
+        margin: 0 2% 0 0;
+        width: 100%;
+    }
+    /*INDEX Articulos*/
+    .art-ord{
+        display: flex;
+        padding: 2% 7%;
+    }
+    .articulos h5{
+        font-size: 1.5rem;
+        margin: 2% 4%;
+    }
+    .subart--tit{
+        font-size: 1.3rem;
+    }
+    .subart-gen{
+        margin: 2% 5%;
+    }
+    /*NOSOTROS */
+    .nos-portada{
+        margin-top: 60px;
+    }
+    .nos-portada h1{
+        top: 4rem;
+    }
+    .nos-portada p{
+        top: 6rem;
+        line-height: 1.2rem;
+        font-size: 1.3rem;
+    }
+    .nos-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .nos-main-cronologia-1{
+        padding: 3% 10%;
+    }
+    .nos-main-cronologia-2{
+        padding: 3% 10%;
+    }
+    .nos-main-cronologia-3{
+        padding: 3% 10%;
+    }
+    .nos-main-cronologia-4{
+        padding: 3% 10%;
+    }
 }
