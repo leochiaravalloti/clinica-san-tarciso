@@ -68,6 +68,9 @@ font-family: 'Bree Serif', serif;
 }
 
 /* MAIN */
+.indx-mn{
+    margin-top: 60px;
+}
 /*PORTADA*/
 .portada{
     height: 80vh; 
@@ -239,6 +242,9 @@ font-family: 'Bree Serif', serif;
     height: auto;
 }
 /*MAIN NOSOTROS*/
+.nos-mn{
+    margin-top: 60px;
+}
 .nos-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -323,7 +329,9 @@ font-family: 'Bree Serif', serif;
 }
 
 /*----------------SERVIVICOS----------*/
-
+.sv-main{
+    margin-top: 60px;
+}
 .sv-dspl{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -410,6 +418,9 @@ font-family: 'Bree Serif', serif;
 }
 
 /*----------CONTACTO----------*/
+.ct-main{
+    margin-top: 60px;
+}
 .ct-main-tx{
     padding: 2% 8% 0 9%;
     margin: 0;
@@ -425,6 +436,7 @@ font-family: 'Bree Serif', serif;
 
 /*----------TURNERO----------*/
 .tr-main{
+    margin-top: 60px;
 }
 .tr-main-form {
     padding: 2% 20%;
@@ -510,27 +522,15 @@ font-family: 'Bree Serif', serif;
         margin-top: 60px;
     }
     .nos-portada h1{
-        top: 4rem;
+        top: 8rem;
     }
     .nos-portada p{
-        top: 6rem;
+        top: 10rem;
         line-height: 1.2rem;
         font-size: 1.3rem;
     }
     .nos-main{
         display: flex;
         flex-direction: column;
-    }
-    .nos-main-cronologia-1{
-        padding: 3% 10%;
-    }
-    .nos-main-cronologia-2{
-        padding: 3% 10%;
-    }
-    .nos-main-cronologia-3{
-        padding: 3% 10%;
-    }
-    .nos-main-cronologia-4{
-        padding: 3% 10%;
     }
 }
