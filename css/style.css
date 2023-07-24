@@ -68,7 +68,7 @@ font-family: 'Bree Serif', serif;
 }
 
 /* MAIN */
-.indx-mn{
+.indx-mnn{
     margin-top: 60px;
 }
 /*PORTADA*/
@@ -242,7 +242,7 @@ font-family: 'Bree Serif', serif;
     height: auto;
 }
 /*MAIN NOSOTROS*/
-.nos-mn{
+.nos-mnn{
     margin-top: 60px;
 }
 .nos-main{
@@ -329,7 +329,7 @@ font-family: 'Bree Serif', serif;
 }
 
 /*----------------SERVIVICOS----------*/
-.sv-main{
+.sv-mn{
     margin-top: 60px;
 }
 .sv-dspl{
@@ -418,7 +418,7 @@ font-family: 'Bree Serif', serif;
 }
 
 /*----------CONTACTO----------*/
-.ct-main{
+.ct-mn{
     margin-top: 60px;
 }
 .ct-main-tx{
@@ -435,7 +435,7 @@ font-family: 'Bree Serif', serif;
 }
 
 /*----------TURNERO----------*/
-.tr-main{
+.tr-mn{
     margin-top: 60px;
 }
 .tr-main-form {
@@ -469,10 +469,19 @@ font-family: 'Bree Serif', serif;
         width: 100%;
     }
     .logo{
-        width: 40%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 2%;
+        grid-template-columns: 1fr 1fr;
     }
-    .logo img{
-        display: none;
+    .logo img{ 
+        margin: 4% 0;  
+        justify-self: left;
+    }
+    .logo button{
+        justify-self: right;
+        border: none;
+       
     }
     /*INDEX Portada*/
     .portada{
@@ -532,5 +541,54 @@ font-family: 'Bree Serif', serif;
     .nos-main{
         display: flex;
         flex-direction: column;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 990px){
+     /* Header */
+     .header{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 2%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo img{ 
+        margin: 4% 0;  
+        justify-self: left;
+        height: 37px;
+        width: auto;
+    }
+    .logo button{
+        margin: 4% 0;  
+        justify-self: right;
+        border: none; 
+    }
+    /*INDEX Portada*/
+    .portada{
+        height: 300px;
+        margin-top: 60px;
+    }
+    .art-ord{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4em 1fr 1fr;
+        grid-template-areas:
+            'main-tit main-tit'
+            'subar0 subar1'
+            'subar2 none';
+    
+    }
+    .nos-portada p{
+        top: 238px;
+        line-height: 23px;
+    }
+    .nos-portada h1 {
+    position: absolute;
+    top: 199px;
+    left: 3%;
+    font-family: 'Rubik', sans-serif;
+    color: #FF7F11;
     }
 }
