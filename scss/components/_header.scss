@@ -1,0 +1,47 @@
+/*HEADER*/
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    &__logo{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    &__nav{
+        justify-content: right;
+        &__text{
+            font-family: $font-oswald;
+            font-weight: 500;
+            font-size: 1.2em; 
+        }
+        &__boton-turnero{
+            margin-top: 1%;
+            margin-left: 3%;
+            a{
+                color: white;
+                background-color: $naranja;
+                border: 3px solid $naranja;
+                border-radius: 7%; 
+                padding: 0;  
+            }
+        }
+        div{
+            ul{
+                li{
+                    ul{
+                        li{
+                           a{@include txt-conf ($negro);} 
+                        }
+                    }
+                };
+            }
+        }
+    }
+}
+.footer{
+    text-align: center;
+    background-color: $light-grey;
+}

@@ -1,0 +1,22 @@
+/*CONTACTO*/
+.ct{
+    margin-top: 80px;
+    &__tx{
+        padding: 2% 8% 0 9%;
+        margin: 0;
+        h2{
+            @include txt-conf ($negro);
+        }
+        p{
+            @include txt-conf ($negro);
+        }
+    }
+    &__map{
+        width: 100%;
+        padding: 2% 10%;
+        margin: 0;
+        iframe{
+            width: 100%;
+        }
+    }
+}

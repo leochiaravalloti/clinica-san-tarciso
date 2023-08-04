@@ -1,0 +1,517 @@
+* {
+  font-family: "Battambang", cursive;
+  font-size: 20px;
+  color: #ACBFA4;
+}
+
+/*HEADER*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header__logo {
+  width: 40%;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__nav {
+  justify-content: right;
+}
+.header__nav__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.header__nav__boton-turnero {
+  margin-top: 1%;
+  margin-left: 3%;
+}
+.header__nav__boton-turnero a {
+  color: white;
+  background-color: #FF7F11;
+  border: 3px solid #FF7F11;
+  border-radius: 7%;
+  padding: 0;
+}
+.header__nav div ul li ul li a {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+
+.footer {
+  text-align: center;
+  background-color: #E2E8CE;
+}
+
+/*HOME*/
+.indx {
+  margin-top: 60px;
+}
+.indx__portada {
+  height: 80vh;
+}
+.indx__portada__car {
+  height: 80vh;
+}
+.indx__portada__car__conteiner {
+  height: 100%;
+}
+.indx__portada__car__conteiner__img {
+  height: 100%;
+  overflow: hidden;
+}
+.indx__portada__car__conteiner__img__text {
+  text-align: left;
+  margin-left: 0;
+  left: 0;
+  background-color: #262626;
+  padding: 0 0 2% 2%;
+  bottom: 0;
+  opacity: 80%;
+  width: 100%;
+}
+.indx__portada__car__conteiner__img__text h5 {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 47px;
+  padding: 0;
+  margin: 0;
+  color: #E2E8CE;
+}
+.indx__portada__car__conteiner__img__text p {
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  color: #E2E8CE;
+}
+.indx__art {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #FF7F11;
+  padding: 3% 5%;
+}
+.indx__art h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  color: #E2E8CE;
+  grid-area: main-tit;
+  margin-left: 2%;
+}
+.indx__art-ord {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4em 1fr;
+  grid-template-areas: "main-tit main-tit main-tit" "subar0 subar1 subar2";
+}
+.indx__art__subart-ord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5%;
+}
+.indx__art__subart-ord img {
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  border-radius: 15%;
+}
+.indx__art__subart-ord a {
+  margin: 2px 0;
+  text-align: center;
+  line-height: 1em;
+  font-size: 1.5em;
+  text-decoration: solid;
+  padding: 0 10%;
+  font-family: "Bree Serif", serif;
+  color: #E2E8CE;
+}
+.indx__art__subart-ord a:hover {
+  text-decoration: underline;
+}
+.indx__art__subart0 {
+  grid-area: subar0;
+}
+.indx__art__subart1 {
+  grid-area: subar1;
+}
+.indx__art__subart2 {
+  grid-area: subar2;
+}
+
+/*NOSOTROS*/
+.nos {
+  margin-top: 60px;
+}
+.nos__portada {
+  padding: 0;
+  margin: 0;
+}
+.nos__portada img {
+  width: 100%;
+  height: auto;
+}
+.nos__portada p {
+  position: absolute;
+  top: 510px;
+  left: 3%;
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  color: #FF7F11;
+  font-size: 30px;
+}
+.nos__portada h1 {
+  position: absolute;
+  top: 450px;
+  left: 3%;
+  font-family: "Rubik", sans-serif;
+  color: #FF7F11;
+}
+.nos__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas: "mv mv cr1" "cr2 cr3 cr3" "cr2 cr4 cr4";
+}
+.nos__main__mision {
+  background-color: #FF1B1C;
+  margin: 0;
+  grid-area: mv;
+  padding: 3% 10%;
+}
+.nos__main__mision h3 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__mision p {
+  font-size: 1rem;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-1 {
+  background-color: #E2E8CE;
+  margin: 0;
+  grid-area: cr1;
+}
+.nos__main__cronologia-1 img {
+  width: 100%;
+}
+.nos__main__cronologia-1 h3 {
+  padding: 7% 5% 0 5%;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-1 p {
+  padding: 0 5% 0 5%;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-2 {
+  background-color: #FF7F11;
+  margin: 0;
+  grid-area: cr2;
+}
+.nos__main__cronologia-2 h3 {
+  padding: 10% 5% 2% 5%;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-2 p {
+  padding: 5% 7%;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-2 img {
+  width: 100%;
+}
+.nos__main__cronologia-3 {
+  background-color: #262626;
+  margin: 0;
+  grid-area: cr3;
+}
+.nos__main__cronologia-3 h3 {
+  padding: 2% 7% 0% 7%;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-3 p {
+  padding: 0 7%;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-3 img {
+  width: 100%;
+}
+.nos__main__cronologia-4 {
+  background-color: #ACBFA4;
+  margin: 0;
+  grid-area: cr4;
+}
+.nos__main__cronologia-4 h3 {
+  padding: 2% 7% 0% 7%;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-4 p {
+  padding: 1% 7%;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.nos__main__cronologia-4 img {
+  width: 100%;
+}
+
+/*SERVICIOS*/
+.sv {
+  margin-top: 80px;
+}
+.sv__dspl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "dp1 dp2 dp3" "dp4 dp5 dp6";
+  padding: 0;
+  margin: 0;
+  background-color: #FF7F11;
+}
+.sv__dspl__a:hover {
+  border: 2px solid #E2E8CE;
+  border-radius: 4%;
+}
+.sv__dspl__a__cd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4% 7%;
+  color: #E2E8CE;
+}
+.sv__dspl__a__cd img {
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+  width: 100%;
+}
+.sv__dspl__a__cd a {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 1%;
+}
+.sv__dspl__a__card {
+  grid-area: dp1;
+}
+.sv__dspl__a__clin {
+  grid-area: dp2;
+}
+.sv__dspl__a__obst {
+  grid-area: dp3;
+}
+.sv__dspl__a__odon {
+  grid-area: dp4;
+}
+.sv__dspl__a__oft {
+  grid-area: dp5;
+}
+.sv__dspl__a__ped {
+  grid-area: dp6;
+}
+.sv__acord {
+  background: linear-gradient(to top, #FF1B1C, #FF1B1C, #FF7F11);
+  padding: 2% 10%;
+  margin: 0;
+  z-index: -1;
+}
+.sv__acord__item h2 {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.sv__acord__item__text div p {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+/*CONTACTO*/
+.ct {
+  margin-top: 80px;
+}
+.ct__tx {
+  padding: 2% 8% 0 9%;
+  margin: 0;
+}
+.ct__tx h2 {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.ct__tx p {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.ct__map {
+  width: 100%;
+  padding: 2% 10%;
+  margin: 0;
+}
+.ct__map iframe {
+  width: 100%;
+}
+
+/*TURNERO*/
+.turn {
+  margin-top: 80px;
+}
+.turn__form {
+  padding: 2% 20%;
+  background-color: #E2E8CE;
+  display: flex;
+  flex-direction: column;
+}
+.turn__form h4 {
+  font-size: 1.5rem;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+.turn__form input {
+  font-size: 1.4rem;
+  margin: 1% 0;
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.turn__form label select {
+  font-size: 1.4rem;
+}
+.turn__form__inp select {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.turn__form__inp label {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.turn__form__inp button {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+.turn__form__inp__sel option {
+  color: #262626;
+  font-family: "Rubik", sans-serif;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 500px) {
+  /*HEADER MQ*/
+  .header__logo {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header__logo img {
+    margin: 4% 0;
+    justify-self: left;
+  }
+  .header__logo button {
+    justify-self: right;
+    border: none;
+  }
+  /*INDEX MQ*/
+  .indx {
+    margin-top: 60px;
+  }
+  .indx__portada {
+    height: 300px;
+  }
+  .indx__portada__car__conteiner {
+    height: 100%;
+  }
+  .indx__portada__car__conteiner__img {
+    width: auto;
+    overflow: hidden;
+    height: 100%;
+  }
+  .indx__portada__car__conteiner__img__text {
+    height: 25%;
+  }
+  .indx__portada__car__conteiner__img__text h5 {
+    font-size: 0.9rem;
+    padding: 2% 2% 0 0;
+    margin: 0;
+    width: 100%;
+  }
+  .indx__portada__car__conteiner__img__text p {
+    font-size: 0.6rem;
+    margin: 0 2% 0 0;
+    width: 100%;
+  }
+  .indx__art h5 {
+    font-size: 1.5rem;
+    margin: 2% 4%;
+  }
+  .indx__art-ord {
+    display: flex;
+    padding: 2% 7%;
+  }
+  .indx__art__subart-ord {
+    margin: 2% 5%;
+  }
+  .indx__art__subart-ord a {
+    font-size: 1.3rem;
+  }
+  /*NOSOTROS MQ*/
+  .nos {
+    margin-top: 60px;
+  }
+  .nos__portada p {
+    top: 10rem;
+    line-height: 1.2rem;
+    font-size: 1.3rem;
+  }
+  .nos__portada h1 {
+    top: 8rem;
+  }
+  .nos__main {
+    display: flex;
+    flex-direction: column;
+  }
+  /*SERVICIOS MQ*/
+  .sv {
+    margin-top: 80px;
+  }
+  .sv__dspl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "dp1 dp2" "dp3 dp4" "dp5 dp6";
+    padding: 0;
+    margin: 0;
+    background-color: #FF7F11;
+  }
+  .sv__dspl__a__cd a {
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1%;
+  }
+  .sv__acord__item h2 {
+    color: #262626;
+    font-family: "Rubik", sans-serif;
+  }
+  .sv__acord__item__text div p {
+    color: #262626;
+    font-family: "Rubik", sans-serif;
+    font-size: 0.9rem;
+  }
+  /*CONTACTO MQ*/
+  /*TURNERO MQ*/
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+/*SERVICIOS*/
+.sv{
+    margin-top: 80px;
+    &__dspl{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        'dp1 dp2 dp3'
+        'dp4 dp5 dp6' ;
+        @include pad-marg (0,0);
+        background-color: $naranja;
+        &__a{
+            &:hover{
+                border: 2px solid $light-grey;
+                border-radius: 4%;
+            }
+            &__cd{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 4% 7%;
+                color: $light-grey; 
+                img{
+                    border-top-left-radius: 4%;
+                    border-top-right-radius: 4%; 
+                    width: 100%;
+                }
+                a{
+                    text-align: center;
+                    font-family: $font-rubik;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    padding: 1%;
+                }
+            }
+            &__card{
+                grid-area: dp1;
+            }  
+            &__clin{
+                grid-area: dp2;
+            }
+            &__obst{
+                grid-area: dp3;
+            }
+            &__odon{
+                grid-area: dp4;
+            }
+            &__oft{
+                grid-area: dp5;
+            }
+            &__ped{
+                grid-area: dp6;
+            }
+        }       
+    }
+    &__acord{
+        background: linear-gradient( to top, $rojo, $rojo, $naranja);
+        @include pad-marg (2% 10%,0);
+        z-index: -1;
+        &__item{
+            h2{
+                @include txt-conf ($negro);
+            }
+            &__text{
+                div{
+                    p{
+                        @include txt-conf ($negro);
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }      
+    }
+}

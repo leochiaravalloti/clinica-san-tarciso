@@ -1,0 +1,41 @@
+/*TURNERO*/
+.turn{
+    margin-top: 80px;
+    &__form{
+        padding: 2% 20%;
+        background-color: $light-grey;
+        display: flex;
+        flex-direction: column;
+        h4{
+            font-size: 1.5rem;
+            @include txt-conf ($negro);
+            text-align: center;   
+        }
+        input{
+            font-size: 1.4rem;
+            margin: 1% 0; 
+            @include txt-conf ($negro);
+        }
+        label{
+            select{
+                font-size: 1.4rem;
+            }
+        }
+        &__inp{
+            select{
+                @include txt-conf ($negro);
+            }
+            label{
+                @include txt-conf ($negro);
+            }
+            button{
+                @include txt-conf ($negro);
+            }
+            &__sel{
+                option{
+                    @include txt-conf ($negro);
+                }
+            }
+        }
+    }
+}

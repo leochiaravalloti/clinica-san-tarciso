@@ -1,0 +1,116 @@
+/*NOSOTROS*/
+.nos{
+    margin-top: 60px;
+    &__portada{
+        padding: 0;
+        margin: 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            position: absolute;
+            top: 510px;
+            left: 3%;
+            font-family: $font-rubik;
+            font-style: italic;
+            color: $naranja;
+            font-size: 30px;
+        }
+        h1{
+            position: absolute;
+            top: 450px;
+            left: 3%;
+            font-family: $font-rubik;
+            color: $naranja;
+        }
+    }
+    &__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-areas: 
+        'mv mv cr1'
+        'cr2 cr3 cr3'
+        'cr2 cr4 cr4';
+        &__mision{
+            background-color: $rojo;
+            margin: 0;
+            grid-area: mv;
+            padding: 3% 10%;
+            h3{
+                @include txt-conf ($blanco);
+            }
+            p{
+                font-size: 1rem; 
+                @include txt-conf ($blanco); 
+            }
+        } 
+        &__cronologia-1{
+            background-color: $light-grey;
+            margin: 0;
+            grid-area: cr1; 
+            img{
+                width: 100%;
+            }
+            h3{
+                 padding: 7% 5% 0 5%;
+                @include txt-conf ($negro);
+            }
+            p{
+                padding: 0 5% 0 5%;
+                @include txt-conf ($negro);
+            }
+        } 
+        &__cronologia-2{
+            background-color: $naranja;
+            margin: 0;
+            grid-area: cr2;
+            h3{
+                padding: 10% 5% 2% 5%;
+                @include txt-conf ($negro);
+            }
+            p{
+                padding: 5% 7%;
+                @include txt-conf ($negro);
+            }    
+            img{
+               width: 100%;
+            }        
+        }      
+         
+        &__cronologia-3{
+            background-color: $negro;
+            margin: 0;
+            grid-area: cr3;
+            h3{
+                padding: 2% 7% 0% 7%;
+                @include txt-conf ($blanco);    
+            }
+            p{
+                padding: 0 7%;  
+                @include txt-conf ($blanco);  
+            }
+            img{
+                width: 100%;    
+            }
+        }
+        &__cronologia-4{
+            background-color: $dark-gray;
+            margin: 0;
+            grid-area: cr4;    
+            h3{
+                padding: 2% 7% 0% 7%;
+                @include txt-conf ($negro);
+            }
+            p{
+                padding: 1% 7%;
+                @include txt-conf ($negro);
+            }
+            img{
+                width: 100%;
+            }
+        }
+          
+    }
+}
