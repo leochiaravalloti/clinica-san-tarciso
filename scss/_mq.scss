@@ -21,7 +21,6 @@
     .indx{
         margin-top: 60px;   
         &__portada{
-            height: 300px;
             &__car{
                 &__conteiner{
                     height: 100%;
@@ -32,12 +31,12 @@
                         &__text{
                             height: 25%;
                             h5{
-                                font-size: 0.9rem;
-                                @include pad-marg (2% 2% 0 0,0);
+                                font-size: 1.2rem;
+                                @include pad-marg (1% 2% 0 0,0);
                                 width: 100%;
                             }
                             p{
-                                font-size: 0.6rem;
+                                font-size: 0.8rem;
                                 margin: 0 2% 0 0;
                                 width: 100%;  
                             }
