@@ -3,19 +3,63 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
-    &__logo{
+    z-index: 3;
+    &__nav1{
+        &__cont{
+            &__logo{
+                width: 40%;
+                    img{
+                        width: 100%;
+                    }
+            }
+            &__bot{
+
+            }
+            &__nav{
+                margin: 0 2% 0 0;
+                &__coll{
+                    &__ul{
+                        &__li{
+                            a{
+                                font-family: $font-oswald;
+                                font-weight: 500;
+                                font-size: 1.2em;}
+                        }
+                        &__li-turnero{
+                            margin-top: 1%;
+                            margin-left: 3%;
+                            a{
+                                font-family: $font-oswald;
+                                font-weight: 500;
+                                font-size: 1.2em;
+                                color: white;
+                                background-color: $naranja;
+                                border: 3px solid $naranja;
+                                border-radius: 7%; 
+                                padding: 0;  
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+        /*
         width: 40%;
         img{
             width: 100%;
         }
     }
     &__nav{
-        justify-content: right;
+        margin: 0 2% 0 0;
         &__text{
             font-family: $font-oswald;
             font-weight: 500;
-            font-size: 1.2em; 
+            font-size: 1.2em;
+            &__sub{
+                font_size: 0.9em;
+            } 
         }
         &__boton-turnero{
             margin-top: 1%;
@@ -33,14 +77,16 @@
                 li{
                     ul{
                         li{
-                           a{@include txt-conf ($negro);} 
+                           a{
+                            @include txt-conf ($negro);
+                            }  
                         }
                     }
                 };
             }
         }
     }
-}
+} */
 .footer{
     text-align: center;
     background-color: $light-grey;

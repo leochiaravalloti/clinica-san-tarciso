@@ -2,18 +2,25 @@
 @media screen and (max-width: 600px){
     /*HEADER MQ*/
     .header{
-        &__logo{
-            width: 100%;
-            display: grid;
-            grid-template-rows: 2%;
-            grid-template-columns: 1fr 1fr;
-            img{
-                margin: 4% 0;  
-                justify-self: left;
-            }
-            button{
-                justify-self: right;
-                border: none;
+        &__nav1{
+            &__cont{
+                width: 100%;
+                display: grid;
+                grid-template-rows: 2%;
+                grid-template-columns: 1fr 1fr;
+                &__logo{
+                    width: 70%;
+                    img{
+                        margin: 4% 0;  
+                        width: 100%;
+                    }
+                }
+                &__bot{
+                    border: none;
+                    :hover{
+                        border: none;
+                    }
+                }
             }
         }
     }
@@ -53,6 +60,138 @@
             }
             &-ord{
                 display: flex;
+                padding: 2% 7%;
+            }
+            &__subart-ord{
+                margin: 6% 5%;
+                a{
+                    font-size: 1.3rem; 
+                }   
+            }
+        }
+    }
+    /*NOSOTROS MQ*/
+    .nos{
+        margin-top: 60px;
+        &__portada{
+            p{
+                top: 10rem;
+                line-height: 1.2rem;
+                font-size: 1.3rem;
+            }
+            h1{
+                top: 8rem;
+            }
+        }
+        &__main{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    /*SERVICIOS MQ*/
+    .sv{
+        margin-top: 80px;
+        &__dspl{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-areas: 
+            'dp1 dp2'
+            'dp3 dp4' 
+            'dp5 dp6' ;
+            @include pad-marg (0,0);
+            background-color: $naranja;
+            &__a{
+                
+                &__cd{
+                    a{
+                        text-align: center;
+                        font-family: $font-rubik;
+                        font-size: 1.2rem;
+                        line-height: 1.5rem;
+                        padding: 1%;
+                    }
+                }
+            }       
+        }
+        &__acord{
+            &__item{
+                h2{
+                    @include txt-conf ($negro);
+                }
+                &__text{
+                    div{
+                        p{
+                            @include txt-conf ($negro);
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }      
+        }
+    }
+    /*CONTACTO MQ*/
+    /*TURNERO MQ*/
+}
+@media screen  and (min-width: 601px) and (max-width: 990px){
+    /*HEADER MQ*/
+    .header{
+        &__nav1{
+            &__cont{
+                width: 100%;
+                display: grid;
+                grid-template-rows: 2%;
+                grid-template-columns: 1fr 1fr;
+                &__logo{
+                    width: 50%;
+                    img{
+                        margin: 4% 0;  
+                        width: 100%;
+                    }
+                }
+                &__bot{
+                    border: none;
+                    :hover{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    /*INDEX MQ*/
+    .indx{
+           
+        &__portada{
+            &__car{
+                &__conteiner{
+                    
+                    &__img{
+                        width: 100%;
+                        overflow: hidden;
+                        height: 100%;
+                        &__text{
+                            height: 25%;
+                            h5{
+                                font-size: 1.2rem;
+                                @include pad-marg (1% 2% 0 0,0);
+                                width: 100%;
+                            }
+                            p{
+                                font-size: 0.8rem;
+                                margin: 0 2% 0 0;
+                                width: 100%; 
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+        &__art{
+            h5{
+                font-size: 1.5rem;
+                margin: 2% 4%;
+            }
+            &-ord{
                 padding: 2% 7%;
             }
             &__subart-ord{
