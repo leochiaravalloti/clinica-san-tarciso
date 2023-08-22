@@ -1,5 +1,4 @@
-/*MEDIA QUERIES*/
-@media screen and (max-width: 600px){
+@media screen and (min-width: 601px) and (max-widht: 990px){
     /*HEADER MQ*/
     .header{
         &__logo{
