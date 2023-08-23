@@ -369,7 +369,7 @@
   background: linear-gradient(to top, #FF1B1C, #FF1B1C, #FF7F11);
   padding: 2% 10%;
   margin: 0;
-  z-index: -1;
+  z-index: -3;
 }
 .sv__acord__item h2 {
   color: #262626;

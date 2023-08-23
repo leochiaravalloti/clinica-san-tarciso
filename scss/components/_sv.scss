@@ -57,7 +57,7 @@
     &__acord{
         background: linear-gradient( to top, $rojo, $rojo, $naranja);
         @include pad-marg (2% 10%,0);
-        z-index: -1;
+        z-index: -3;
         &__item{
             h2{
                 @include txt-conf ($negro);
