@@ -1,9 +1,33 @@
 /*TURNERO*/
 .turn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'complem form' ;
     margin-top: 80px;
+    &__complem{
+        grid-area: complem;
+        background-image: url('../assets/images/turn-comp.jpg');
+        background-position: center center;
+        background-size: cover;
+        @include pad-marg (0,0);
+        &__div{
+            position: sticky;
+            top: 200px;
+            @include pad-marg(2% 5%, 0);
+            h3{
+                @include txt-conf($blanco);
+                font-size: 2rem;
+            }
+            p{
+                @include txt-conf($blanco);
+                font-size: 1rem;  
+            }
+        }
+    }
     &__form{
         padding: 2% 20%;
-        background-color: $light-grey;
+        background-color: $blanco;
         display: flex;
         flex-direction: column;
         h4{
@@ -37,5 +61,8 @@
                 }
             }
         }
+    }
+    &__form-ord{
+        grid-area: form;
     }
 }

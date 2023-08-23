@@ -40,51 +40,66 @@
   padding: 0;
 }
 
-/*
-        width: 40%;
-        img{
-            width: 100%;
-        }
-    }
-    &__nav{
-        margin: 0 2% 0 0;
-        &__text{
-            font-family: $font-oswald;
-            font-weight: 500;
-            font-size: 1.2em;
-            &__sub{
-                font_size: 0.9em;
-            } 
-        }
-        &__boton-turnero{
-            margin-top: 1%;
-            margin-left: 3%;
-            a{
-                color: white;
-                background-color: $naranja;
-                border: 3px solid $naranja;
-                border-radius: 7%; 
-                padding: 0;  
-            }
-        }
-        div{
-            ul{
-                li{
-                    ul{
-                        li{
-                           a{
-                            @include txt-conf ($negro);
-                            }  
-                        }
-                    }
-                };
-            }
-        }
-    }
-} */
 .footer {
+  background-color: #262626;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1rem;
+  grid-template-areas: "logo logo xx map" "dev dev dev dev";
+  padding: 3% 4%;
+  margin: 0;
+}
+.footer__logo {
+  grid-area: logo;
+  padding: 5% 0 0 0;
+  margin: 0;
+}
+.footer__logo h3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.7rem;
   text-align: center;
-  background-color: #E2E8CE;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.footer__logo p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.footer__map {
+  grid-area: map;
+}
+.footer__map a {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+  padding: 2% 0;
+  margin: 0;
+  line-height: 1rem;
+}
+.footer__map a:hover {
+  text-decoration: underline;
+}
+.footer__map-ord {
+  display: flex;
+  flex-direction: column;
+}
+.footer__dev {
+  grid-area: dev;
+}
+.footer__dev p {
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 2% 0;
+  margin: 0;
 }
 
 /*HOME*/
@@ -393,11 +408,39 @@
 
 /*TURNERO*/
 .turn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "complem form";
   margin-top: 80px;
+}
+.turn__complem {
+  grid-area: complem;
+  background-image: url("../assets/images/turn-comp.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.turn__complem__div {
+  position: sticky;
+  top: 200px;
+  padding: 2% 5%;
+  margin: 0;
+}
+.turn__complem__div h3 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+}
+.turn__complem__div p {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
 }
 .turn__form {
   padding: 2% 20%;
-  background-color: #E2E8CE;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -431,6 +474,9 @@
 .turn__form__inp__sel option {
   color: #262626;
   font-family: "Rubik", sans-serif;
+}
+.turn__form-ord {
+  grid-area: form;
 }
 
 /*MEDIA QUERIES*/
@@ -537,7 +583,40 @@
   }
   /*CONTACTO MQ*/
   /*TURNERO MQ*/
+  .turn {
+    display: flex;
+    flex-direction: column;
+  }
+  .turn__complem {
+    padding: 0 10%;
+  }
+  /*footer*/
+  .footer {
+    grid-template-areas: "logo logo map map" "dev dev dev dev";
+    padding: 3% 4%;
+    margin: 0;
+  }
+  .footer__logo {
+    padding: 5% 0 0 0;
+    margin: 0;
+  }
+  .footer__logo h3 {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    padding: 20% 0;
+    margin: 0;
+  }
+  .footer__logo p {
+    display: none;
+  }
+  .footer__dev p {
+    font-size: 0.6rem;
+  }
+  .footer__dev p a {
+    font-size: 0.6rem;
+  }
 }
+/*mq for medium size screens*/
 @media screen and (min-width: 601px) and (max-width: 990px) {
   /*HEADER MQ*/
   .header__nav1__cont {

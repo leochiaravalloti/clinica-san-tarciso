@@ -130,9 +130,44 @@
             }      
         }
     }
+
     /*CONTACTO MQ*/
     /*TURNERO MQ*/
+    .turn{
+        display: flex;
+        flex-direction: column;
+        &__complem{
+            padding: 0 10%;
+            &__div{
+            }
+        }
+    }
+    /*footer*/
+    .footer{
+        grid-template-areas: 
+            'logo logo map map'
+            'dev dev dev dev';
+        @include pad-marg (3% 4%,0);
+        &__logo{
+            @include pad-marg (5% 0 0 0,0);
+            h3{
+                font-size: 1.3rem;
+                line-height: 1rem;
+                @include pad-marg (20% 0,0);
+            }
+            p{
+                display: none;
+            }
+        }
+        &__dev{
+            p{
+                font-size: 0.6rem;
+                a{font-size: 0.6rem;}
+            }
+        }
+    } 
 }
+/*mq for medium size screens*/  
 @media screen  and (min-width: 601px) and (max-width: 990px){
     /*HEADER MQ*/
     .header{

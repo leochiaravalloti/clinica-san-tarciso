@@ -45,49 +45,62 @@
         }
     }
 }
-        /*
-        width: 40%;
-        img{
-            width: 100%;
-        }
-    }
-    &__nav{
-        margin: 0 2% 0 0;
-        &__text{
-            font-family: $font-oswald;
-            font-weight: 500;
-            font-size: 1.2em;
-            &__sub{
-                font_size: 0.9em;
-            } 
-        }
-        &__boton-turnero{
-            margin-top: 1%;
-            margin-left: 3%;
-            a{
-                color: white;
-                background-color: $naranja;
-                border: 3px solid $naranja;
-                border-radius: 7%; 
-                padding: 0;  
-            }
-        }
-        div{
-            ul{
-                li{
-                    ul{
-                        li{
-                           a{
-                            @include txt-conf ($negro);
-                            }  
-                        }
-                    }
-                };
-            }
-        }
-    }
-} */
+       
 .footer{
-    text-align: center;
-    background-color: $light-grey;
+    background-color: $negro;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1rem;
+    grid-template-areas: 
+    'logo logo xx map'
+    'dev dev dev dev';
+    @include pad-marg (3% 4%,0);
+    &__logo{
+        grid-area: logo;
+        @include pad-marg (5% 0 0 0,0);
+        h3{
+            font-family: $font-varela;
+            font-size: 1.7rem;
+            text-align: center;
+            color: $blanco;
+            @include pad-marg (0,0);
+        }
+        p{
+            font-family: $font-oswald ;
+            font-size: 1rem;
+            text-align: center;
+            color: $blanco;
+            @include pad-marg (0,0);
+        }
+    }
+    &__map{
+        grid-area: map;
+        a{
+            font-family: $font-oswald;
+            font-size: 0.8rem;
+            color: $blanco;
+            text-align: right;
+            text-decoration: none;
+            @include pad-marg (2% 0,0);
+            line-height: 1rem;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    &__map-ord{
+        display: flex;
+        flex-direction: column;
+    }
+    &__dev{
+        grid-area: dev;
+        p{
+            color: $blanco;
+            font-family: $font-varela;
+            font-size: 0.8rem;
+            text-align: center;
+            @include pad-marg (2% 0,0);
+        }
+    }
+
 }
